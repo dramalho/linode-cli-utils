@@ -1,3 +1,5 @@
+require 'linode'
+
 module LinodeCliUtils
   module Clients
     class Linode

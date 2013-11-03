@@ -1,5 +1,6 @@
 #!/usr/bin/env ruby
 
+require 'linode_cli_utils'
 require 'commander/import'
 require 'yaml'
 
