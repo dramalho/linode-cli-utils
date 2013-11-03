@@ -1,7 +1,5 @@
 #!/usr/bin/env ruby
 
-require "#{File.dirname(File.realpath(__FILE__))}/config/application.rb"
-
 require 'commander/import'
 require 'yaml'
 
@@ -15,6 +13,6 @@ command :'box-ips-for-ssh-config' do |c|
   c.summary = ''
   c.description = ''
   c.example 'description', 'Dumps the available box ip\'s into a .ssh/config format'
-  c.when_called Commands::ListBoxes
+  c.when_called LinodeCliUtils::Commands::ListBoxes
 end
 
